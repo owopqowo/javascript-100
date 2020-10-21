@@ -1,0 +1,47 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom right, #50a3a2 0%, #53e3a6 100%);
+}
+.box {
+    text-align: center;
+}
+.title {
+    margin: 0;
+    color: #fff;
+    text-transform: uppercase;
+}
+.counter {
+    display: block;
+    margin: 5px 0 20px;
+    font-size: 60px;
+    color: #fff;
+}
+.btn-group {
+    display: flex;
+
+}
+.btn-group > button {
+    flex: 1 0 0px;
+    min-width: 120px;
+    font-size: 16px;
+    line-height: 1.4;
+    margin: 0 5px;
+    padding: 10px;
+    text-transform: uppercase;
+    border: 1px solid rgba(255,255,255,0.8);
+    background: rgba(255,255,255,0.2);
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+.btn-group > button:hover {
+    background: rgba(255,255,255,0.3);
+}
