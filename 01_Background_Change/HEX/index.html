@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background Change Color</title>
+</head>
+
+<body>
+    <button class="btn">Click Me!</button>
+    <script>
+        const btn = document.querySelector('.btn');
+        const body = document.querySelector('body');
+        btn.addEventListener('click', function () {
+            let color = ((Math.random()+2)*16777216|0).toString(16).slice(1);
+            body.style = `background: #${color}`;
+        });
+    </script>
+</body>
+
+</html>

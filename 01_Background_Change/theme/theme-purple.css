@@ -1,0 +1,25 @@
+.top-menu > a:hover,
+.profile-item:hover > a,
+.bottom-menu > a:hover,
+.grid a:hover,
+.checkbox-label > input:checked ~ i::before,
+.tab-menu-item > a:hover {
+    color: #7867a7;
+}
+
+.main-menu-item.active > a::before,
+.search-box > button,
+button:hover,
+.grid-pager .active {
+    background-color: #7867a7;
+}
+
+input[type="text"]:focus,
+.color-list,
+button {
+    border-color: #7867a7;
+}
+
+.tab-menu-item.active {
+    border-top-color: #7867a7;
+}

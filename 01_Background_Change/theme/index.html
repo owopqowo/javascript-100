@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theme</title>
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="theme-red.css" id="theme">
+    <script defer src="common.js"></script>
+</head>
+<body>
+    </script>
+    <header class="header">
+        <div class="profile-box">
+            <a href="javascript:;" class="profile">
+                <img src="https://placeimg.com/30/30/people" alt="">
+                Admin
+                <i class="mdi mdi-chevron-down"></i>
+            </a>
+            <ul class="profile-list">
+                <li class="profile-item"><a href="">Profile</a></li>
+                <li class="profile-item"><a href="">Notifications</a></li>
+                <li class="profile-item"><a href="">Settings</a></li>
+                <li class="profile-item logout"><a href="">Logout</a></li>
+            </ul>
+        </div>
+        <nav class="top-menu">
+            <a href="javascript:;" class="btn-fullscreen"><i class="mdi mdi-fullscreen"></i></a>
+            <a href=""><i class="mdi mdi-email-outline"></i></a>
+            <a href=""><i class="mdi mdi-bell-outline"></i></a>
+            <a href=""><i class="mdi mdi-format-line-spacing"></i></a>
+        </nav>
+
+    </header>
+    <nav class="lnb">
+        <h1 class="logo">Admin</h1>
+        <ul class="main-menu">
+            <li class="main-menu-item active">
+                <a href="">Dashboard<i class="mdi mdi-chevron-right"></i></a>
+                <ul class="sub-menu">
+                    <li class="sub-menu-item"><a href="">Business</a></li>
+                    <li class="sub-menu-item"><a href="">Finance</a></li>
+                    <li class="sub-menu-item"><a href="">Jobs</a></li>
+                    <li class="sub-menu-item"><a href="">Restaurant</a></li>
+                    <li class="sub-menu-item"><a href="">Social</a></li>
+                </ul>
+            </li>
+            <li class="main-menu-item"><a href="">Pages<i class="mdi mdi-chevron-right"></i></a></li>
+            <li class="main-menu-item"><a href="">Table<i class="mdi mdi-chevron-right"></i></a></li>
+            <li class="main-menu-item"><a href="">Control<i class="mdi mdi-chevron-right"></i></a></li>
+            <li class="main-menu-item"><a href="">Forms<i class="mdi mdi-chevron-right"></i></a></li>
+        </ul>
+        <div class="setting">
+            <input type="checkbox" id="toggle">
+            <label for="toggle" class="btn-set">
+                <i class="mdi mdi-cog"></i>
+                Custom
+            </label>
+            <div class="color-list">
+                <label class="color-item" data-color="red"><input type="radio" name="set" checked><i class="mdi mdi mdi-check"></i></label>
+                <label class="color-item" data-color="orange"><input type="radio" name="set"><i class="mdi mdi mdi-check"></i></label>
+                <label class="color-item" data-color="green"><input type="radio" name="set"><i class="mdi mdi mdi-check"></i></label>
+                <label class="color-item" data-color="blue"><input type="radio" name="set"><i class="mdi mdi mdi-check"></i></label>
+                <label class="color-item" data-color="purple"><input type="radio" name="set"><i class="mdi mdi mdi-check"></i></label>
+            </div>
+        </div>
+    </nav>
+    <main class="main">
+        <div class="title-box">
+            <h2 class="page-title">Title</h2>
+            <p class="page-desc">Description</p>
+            <div class="item-group">
+                <div class="search-box">
+                    <input type="text">
+                    <button><span class="mdi mdi-magnify"></span></button>
+                </div>
+                <button>Add</button>
+                <button>Delete</button>
+                <button>Save</button>
+            </div>
+        </div>
+        <div class="tab-box">
+            <ul class="tab-menu">
+                <li class="tab-menu-item active"><a href="">tab1</a></li>
+                <li class="tab-menu-item"><a href="">tab2</a></li>
+                <li class="tab-menu-item"><a href="">tab3</a></li>
+            </ul>
+            <div class="tab-cont active">
+                <div class="grid-box">
+                    <table class="grid">
+                        <colgroup>
+                            <col width="100px">
+                            <col width="100px">
+                            <col width="150px">
+                            <col >
+                            <col width="150px">
+                            <col width="150px">
+                            <col width="150px">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>Number</th>
+                                <th><label class="checkbox-label"><input type="checkbox"><i class="mdi mdi-checkbox-blank"></i></label></th>
+                                <th>Image</th>
+                                <th>Title</th>
+                                <th>Category</th>
+                                <th>Author</th>
+                                <th>Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>10</td>
+                                <td><label class="checkbox-label"><input type="checkbox"><i class="mdi mdi-checkbox-blank"></i></label></td>
+                                <td><img src="https://placeimg.com/100/100/any" alt=""></td>
+                                <td data-type="title"><a href="">Where is it?</a></td>
+                                <td>Something</td>
+                                <td>Admin</td>
+                                <td>2020.09.24</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td><label class="checkbox-label"><input type="checkbox"><i class="mdi mdi-checkbox-blank"></i></label></td>
+                                <td><img src="https://placeimg.com/100/100/animals" alt=""></td>
+                                <td data-type="title"><a href="">Where is it?</a></td>
+                                <td>Something</td>
+                                <td>Admin</td>
+                                <td>2020.09.24</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td><label class="checkbox-label"><input type="checkbox"><i class="mdi mdi-checkbox-blank"></i></label></td>
+                                <td><img src="https://placeimg.com/100/100/arch" alt=""></td>
+                                <td data-type="title"><a href="">Where is it?</a></td>
+                                <td>Something</td>
+                                <td>Admin</td>
+                                <td>2020.09.24</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td><label class="checkbox-label"><input type="checkbox"><i class="mdi mdi-checkbox-blank"></i></label></td>
+                                <td><img src="https://placeimg.com/100/100/any" alt=""></td>
+                                <td data-type="title"><a href="">Where is it?</a></td>
+                                <td>Something</td>
+                                <td>Admin</td>
+                                <td>2020.09.24</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td><label class="checkbox-label"><input type="checkbox"><i class="mdi mdi-checkbox-blank"></i></label></td>
+                                <td><img src="https://placeimg.com/100/100/nature" alt=""></td>
+                                <td data-type="title"><a href="">Where is it?</a></td>
+                                <td>Something</td>
+                                <td>Admin</td>
+                                <td>2020.09.24</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td><label class="checkbox-label"><input type="checkbox"><i class="mdi mdi-checkbox-blank"></i></label></td>
+                                <td><img src="https://placeimg.com/100/100/people" alt=""></td>
+                                <td data-type="title"><a href="">Where is it?</a></td>
+                                <td>Something</td>
+                                <td>Admin</td>
+                                <td>2020.09.24</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td><label class="checkbox-label"><input type="checkbox"><i class="mdi mdi-checkbox-blank"></i></label></td>
+                                <td><img src="https://placeimg.com/100/100/any" alt=""></td>
+                                <td data-type="title"><a href="">Where is it?</a></td>
+                                <td>Something</td>
+                                <td>Admin</td>
+                                <td>2020.09.24</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td><label class="checkbox-label"><input type="checkbox"><i class="mdi mdi-checkbox-blank"></i></label></td>
+                                <td><img src="https://placeimg.com/100/100/tech" alt=""></td>
+                                <td data-type="title"><a href="">Where is it?</a></td>
+                                <td>Something</td>
+                                <td>Admin</td>
+                                <td>2020.09.24</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td><label class="checkbox-label"><input type="checkbox"><i class="mdi mdi-checkbox-blank"></i></label></td>
+                                <td><img src="https://placeimg.com/100/100/animals" alt=""></td>
+                                <td data-type="title"><a href="">Where is it?</a></td>
+                                <td>Something</td>
+                                <td>Admin</td>
+                                <td>2020.09.24</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td><label class="checkbox-label"><input type="checkbox"><i class="mdi mdi-checkbox-blank"></i></label></td>
+                                <td><img src="https://placeimg.com/100/100/nature" alt=""></td>
+                                <td data-type="title"><a href="">Where is it?</a></td>
+                                <td>Something</td>
+                                <td>Admin</td>
+                                <td>2020.09.24</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="grid-pager">
+                        <a href=""><i class="mdi mdi-chevron-left"></i></a>
+                        <a href="" class="active">1</a>
+                        <a href="">2</a>
+                        <a href="">3</a>
+                        <a href="">4</a>
+                        <a href="">5</a>
+                        <a href=""><i class="mdi mdi-chevron-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-cont"></div>
+            <div class="tab-cont"></div>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>Copyright @DevDahboard Ltd.</p>
+        <nav class="bottom-menu">
+            <a href="">Terms of use</a>
+            <a href="">Privacy Policy</a>
+            <a href="">Terms of use</a>
+        </nav>
+    </footer>
+</body>
+</html>
