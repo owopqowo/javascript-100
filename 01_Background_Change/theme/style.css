@@ -40,6 +40,9 @@ input[type="text"] {
     height: 32px;
     padding: 0 10px;
 }
+label {
+    cursor: pointer;
+}
 button {
     border: 1px solid;
     cursor: pointer;
