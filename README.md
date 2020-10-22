@@ -12,3 +12,5 @@ https://jsbeginners.com/javascript-projects-for-beginners/
 [link](https://github.com/owopqowo/javascript-100/tree/master/03_Pass_The_Message)
 ## 04_Counter
 [link](https://github.com/owopqowo/javascript-100/tree/master/04_Counter)
+## 05_Images_Slider
+[link](https://github.com/owopqowo/javascript-100/tree/master/05_Images_Slider)
