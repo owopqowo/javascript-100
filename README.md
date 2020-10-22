@@ -14,3 +14,5 @@ https://jsbeginners.com/javascript-projects-for-beginners/
 [link](https://github.com/owopqowo/javascript-100/tree/master/04_Counter)
 ## 05_Images_Slider
 [link](https://github.com/owopqowo/javascript-100/tree/master/05_Images_Slider)
+## 06_Reviews_and_Ratings
+[link](https://github.com/owopqowo/javascript-100/tree/master/06_Reviews_and_Ratings)
