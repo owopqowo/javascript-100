@@ -1,0 +1,109 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: url(img/tenet.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.review {
+    position: relative;
+    width: 55%;
+    padding: 50px 100px;
+    box-sizing: border-box;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+.main-title {
+    margin: 0 0 30px;
+    text-align: center;
+    font-size: 40px;
+    color: #fff;
+}
+.content {
+    display: flex;
+}
+.img {
+    position: relative;
+    z-index: 2;
+    display: block;
+    width: 260px;
+    height: 260px;
+    background-image: url(img/person1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.box {
+    padding-left: 40px;
+}
+.content-title {
+    margin: 0 0 10px;
+    font-size: 22px;
+}
+.stars {
+    width: 100px;
+    height: 20px;
+    margin: 0 0 10px;
+    background: url(img/stars.png);
+    background-size: 100px;
+}
+.star_on {
+    display: block;
+    width: 60%;
+    height: 100%;
+    background: url(img/stars.png);
+    background-size: 100px;
+    background-position-y: bottom;
+}
+.info {
+    margin-top: 10px;
+}
+.btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    border: 0;
+    background: #eee;
+    border-radius: 50%;
+    outline: none;
+    text-indent: -9999px;
+}
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 18px;
+    width: 12px;
+    height: 12px;
+    transform: rotate(-45deg);
+}
+.btn-prev {
+    left: 25px;
+}
+.btn-prev::before {
+    left: 20px;
+    border-top: 2px solid #333;
+    border-left: 2px solid #333;
+}
+.btn-next {
+    right: 25px;
+}
+.btn-next::before {
+    right: 20px;
+    border-bottom: 2px solid #333;
+    border-right: 2px solid #333;
+}
+.btn:hover {
+    background: #8293a3;
+}
+.btn:hover::before {
+    border-color: #fff;
+}
