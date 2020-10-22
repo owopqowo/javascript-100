@@ -16,7 +16,7 @@ btn.forEach(function(element){
             } else {
                 --slideCount;
             }
-        } else {
+        } else if(element.classList.contains('btn-next')){
             if(slideCount >= img.length - 1) {
                 slideCount = 0;
             } else {
