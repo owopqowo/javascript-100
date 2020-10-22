@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakery</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="common.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="inner">
+            <a href="index.html"><img src="img/logo.png" alt="gustoso"></a>
+            <ul class="gnb">
+                <li class="gnb-item"><a href="#home">Home</a></li>
+                <li class="gnb-item"><a href="#about">About</a></li>
+                <li class="gnb-item"><a href="#menu">Menu</a></li>
+            </ul>
+        </div>
+    </header>
+    <main class="container">
+        <section id="home" class="section home">
+            <div class="inner">
+                <h1 class="title">Pastry with love</h1>
+                <p class="desc">매일 신선한 재료로 <br>당신에게 감동을 선사합니다.</p>
+            </div>
+        </section>
+        <section id="about" class="section about">
+            <div class="inner">
+                <div class="text-box">
+                    <h2 class="title">About Us</h2>
+                    <p class="desc">오븐에서 방금 꺼낸 빵이 가장 맛있다는 것을 알기에,<br>
+                        지금도 더욱 따뜻하고 촉촉한 갓 구운 빵을 제공하기 위해 끊임없이 노력합니다.<br>
+                        매장에서 직접 굽는 것에 그치지 않고, 언제라도 따끈한 빵을 만날 수 있게<br>
+                        더욱 자주 굽고, 고객들이 필요한 시간에 맞춰 굽는 등<br>
+                        세심하고 배려가 담긴 서비스도 준비하고 있습니다.<br>
+                        갓 구워낸 빵은 고소한 향기와 따스한 온기로 매장을 가득 채우고,<br>
+                        고객들에게는 가장 맛있는 빵을 맛보는 행복을 선물합니다.</p>
+                </div>
+                <div class="img-box">
+                    <ul class="img-list">
+                        <li><img src="img/img1.jpg" alt=""></li>
+                        <li><img src="img/img2.jpg" alt=""></li>
+                        <li><img src="img/img3.jpg" alt=""></li>
+                        <li><img src="img/img4.jpg" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="menu" class="section menu">
+            <div class="inner">
+                <h2 class="title">MENU</h2>
+                <div class="btn-list">
+                    <button class="btn btn-all" data-item="all">ALL</button>
+                    <button class="btn btn-cake" data-item="cake">CAKES</button>
+                    <button class="btn btn-sandwich" data-item="sandwich">SANDWICH</button>
+                    <button class="btn btn-doughnut" data-item="doughnut">DOUGHNUTS</button>
+                    <button class="btn btn-beverage" data-item="beverage">BEVERAGE</button>
+                </div>
+                <div class="shearch-box">
+                    <input type="text">
+                    <button class="btn btn-search">Search</button>
+                </div>
+                <ul class="menu-list">
+                    <li data-item="cake">
+                        <button class="btn-open"><img src="img/cake1.jpg" alt=""></button>
+                        <p>choco cake</p>
+                    </li>
+                    <li data-item="cake">
+                        <button class="btn-open"><img src="img/cake2.jpg" alt=""></button>
+                        <p>greentea cake</p>
+                    </li>
+                    <li data-item="beverage">
+                        <button class="btn-open"><img src="img/beverage1.jpg" alt=""></button>
+                        <p>americano</p>
+                    </li>
+                    <li data-item="doughnut">
+                        <button class="btn-open"><img src="img/doughnut1.jpg" alt=""></button>
+                        <p>doughnut</p>
+                    </li>
+                    <li data-item="beverage">
+                        <button class="btn-open"><img src="img/beverage2.jpg" alt=""></button>
+                        <p>latte</p>
+                    </li>
+                    <li data-item="sandwich">
+                        <button class="btn-open"><img src="img/sandwich1.jpg" alt=""></button>
+                        <p>egg sandwich</p>
+                    </li>
+                    <li data-item="sandwich">
+                        <button class="btn-open"><img src="img/sandwich2.jpg" alt=""></button>
+                        <p>tomato sandwich</p>
+                    </li>
+                    <li data-item="doughnut">
+                        <button class="btn-open"><img src="img/doughnut2.jpg" alt=""></button>
+                        <p>choco doughnut</p>
+                    </li>
+                    <li data-item="cake">
+                        <button class="btn-open"><img src="img/cake3.jpg" alt=""></button>
+                        <p>fruit cake</p>
+                    </li>
+                    <li data-item="doughnut">
+                        <button class="btn-open"><img src="img/doughnut3.jpg" alt=""></button>
+                        <p>color doughnut</p>
+                    </li>
+                    <li data-item="sandwich">
+                        <button class="btn-open"><img src="img/sandwich3.jpg" alt=""></button>
+                        <p>cheese sandwich</p>
+                    </li>
+                    <li data-item="cake">
+                        <button class="btn-open"><img src="img/cake4.jpg" alt=""></button>
+                        <p>coffee cake</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>COPYRIGHT 2020©CJ Foodville ALL RIGHT RESERVED.</p>
+    </footer>
+
+    <div class="popup">
+        <div class="img">
+            <button class="btn btn-close">close</button>
+            <button class="btn btn-prev"></button>
+            <button class="btn btn-next"></button>
+        </div>
+    </div>
+</body>
+</html>
