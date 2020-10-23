@@ -18,3 +18,5 @@ https://jsbeginners.com/javascript-projects-for-beginners/
 [link](https://github.com/owopqowo/javascript-100/tree/master/06_Reviews_and_Ratings)
 ## 07_Filter_and_Modal
 [link](https://github.com/owopqowo/javascript-100/tree/master/07_Filter_and_Modal)
+## 08_Calculator
+[link](https://github.com/owopqowo/javascript-100/tree/master/08_Calculator)
