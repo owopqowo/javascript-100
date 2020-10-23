@@ -2,7 +2,6 @@ const input = document.querySelector('input');
 const btnList = document.querySelectorAll('.btn-list button');
 const btnEqual = document.querySelector('.btn-equal');
 
-
 btnList.forEach(function(element){
     element.addEventListener('click', function(){
         const inputVal = input.value;
@@ -17,8 +16,14 @@ btnList.forEach(function(element){
 
 btnEqual.addEventListener('click', function(){
     let inputVal = input.value;
+    if(!inputVal) return input.focus();
     inputVal = inputVal.replace("×", "*");
     inputVal = inputVal.replace("÷", "/");
     const anwser = eval(inputVal)
     input.value = anwser;
+    input.focus();
+});
+
+window.addEventListener('load', function(){
+    input.focus();
 });
