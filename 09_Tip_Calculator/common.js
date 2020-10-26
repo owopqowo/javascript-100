@@ -10,10 +10,49 @@ const resultTotal = document.querySelector('.result-total');
 const resultBill = document.querySelector('.result-bill');
 const resultTip = document.querySelector('.result-tip');
 const total = document.querySelector('#total');
+const popup = document.querySelector('.popup');
+const popupText = document.querySelector('.popup-text');
+const btnOk = document.querySelector('.btn-ok');
 
 const NUM = 3
 
 let tipVal = document.querySelector('input[name="tip"]:checked').value;
+
+function popupShow(text) {
+    popup.classList.add('show');
+    popupText.textContent = text;
+}
+
+function popupHide() {
+    popup.classList.remove('show');
+}
+
+function toastShow() {
+    toast.classList.add('show');
+}
+
+function toastHide() {
+    toast.classList.remove('show');
+}
+
+function calcTip() {
+    let calcBill = Number(total.textContent) / Number(split.textContent);
+    let calcTip = Number(total.textContent) * (Number(tipVal) / 100);
+    let calcTotal = calcBill + calcTip;
+    resultBill.textContent = calcBill.toFixed(2);
+    resultTip.textContent = calcTip.toFixed(2);
+    resultTotal.textContent = calcTotal.toFixed(2);
+}
+
+function reset() {
+    toastHide();
+    total.textContent = '0';
+    split.textContent = '0';
+    customTip.textContent = '0';
+    num = 0;
+    custom.parentElement.classList.remove('show');
+    document.querySelector('#twenty').checked = true;
+}
 
 customTip.addEventListener('keypress', function(e){
     if (customTip.textContent.length >= NUM) {
@@ -56,7 +95,7 @@ btnVariation.forEach(function(element){
                 --num
             }
             split.textContent = num;
-        } else {
+        } else if(element.classList.contains('btn-plus')) {
             ++num
             split.textContent = num;
         }
@@ -65,21 +104,18 @@ btnVariation.forEach(function(element){
 
 btnEnter.addEventListener('click', function(){
     if(total.textContent === '0') {
-        alert('enter bill total')
+        popupShow('enter bill total');
     } else if(split.textContent === '0') {
-        alert('enter split')
+        popupShow('enter split');
     } else {
-        resultBill.textContent = Number(total.textContent) / Number(split.textContent);
-        resultTip.textContent = Number(total.textContent) * (Number(tipVal) / 100);
-        resultTotal.textContent = Number(resultBill.textContent) + Number(resultTip.textContent);
-        toast.classList.add('show');
+        calcTip();
+        toastShow();
         setTimeout(function(){
-            toast.classList.remove('show');
-            total.textContent = '0';
-            split.textContent = '0';
-            customTip.textContent = '0';
-            custom.parentElement.classList.remove('show');
-            document.querySelector('#twenty').checked = true;
+            reset();
         },5000);
     }
 });
+
+btnOk.addEventListener('click', function(){
+    popupHide();
+})
