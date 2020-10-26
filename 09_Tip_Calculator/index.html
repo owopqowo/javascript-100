@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="common.js"></script>
+</head>
+<body>
+    <div class="phone">
+        <div class="calculator">
+            <div class="title-box">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                    <path fill="#cef5e4" fill-opacity="1" d="M0,256L80,266.7C160,277,320,299,480,282.7C640,267,800,213,960,213.3C1120,213,1280,267,1360,293.3L1440,320L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
+                </svg>
+                <h1 class="title">Tip</h1>
+            </div>
+            <div class="form">
+                <dl class="form-list">
+                    <dt class="form-list-title"><label for="total">Enter bill total</label></dt>
+                    <dd class="form-list-cont">
+                        <div class="text-box dollar">
+                            <span class="input" contentEditable="true" id="total">0</span>
+                        </div>
+                    </dd>
+                    <dt class="form-list-title">Choose tip</dt>
+                    <dd class="form-list-cont radio">
+                        <div class="radio-box">
+                            <input type="radio" name="tip" id="ten" value="10">
+                            <label for="ten">10%</label>
+                        </div>
+                        <div class="radio-box">
+                            <input type="radio" name="tip" id="fifteen" value="15">
+                            <label for="fifteen">15%</label>
+                        </div>
+                        <div class="radio-box">
+                            <input type="radio" name="tip" id="twenty" value="20" checked>
+                            <label for="twenty">20%</label>
+                        </div>
+                        <div class="radio-box">
+                            <input type="radio" name="tip" id="twentyFive" value="25">
+                            <label for="twentyFive">25%</label>
+                        </div>
+                        <div class="radio-box">
+                            <input type="radio" name="tip" id="custom">
+                            <label for="custom">Custom Tip</label>
+                            <div class="custom">
+                                <div class="text-box percent">
+                                    <span class="input custom-tip" contentEditable="true">0</span>
+                                </div>
+                            </div>
+                        </div>
+                    </dd>
+                    <dt class="form-list-title"><label for="split">Split</label></dt>
+                    <dd class="form-list-cont">
+                        <button class="btn-variation btn-minus">-</button>
+                        <div class="text-box">
+                            <span class="input" contentEditable="true" id="split">0</span>
+                        </div>
+                        <button class="btn-variation btn-plus">+</button>
+                    </dd>
+                </dl>
+                <button class="btn-enter">Calculate</button>
+            </div>
+            <div class="toast">
+                <dl class="form-list">
+                    <dt class="form-list-title total">Total per person</dt>
+                    <dd class="form-list-cont total">
+                        <span class="result-total"></span>
+                    </dd>
+                    <dt class="form-list-title bill">bill</dt>
+                    <dd class="form-list-cont bill">
+                        <span class="result-bill"></span>
+                    </dd>
+                    <dt class="form-list-title tip">tip</dt>
+                    <dd class="form-list-cont tip">
+                        <span class="result-tip"></span>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

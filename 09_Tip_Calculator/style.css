@@ -1,0 +1,267 @@
+html, body {
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body {
+    align-items: center;
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+}
+h1, h2, h3, h4, h5, h6, p, dl, dt, dd {
+    margin: 0;
+    padding: 0;
+}
+input, button {
+    background: none;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    padding: 0;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+}
+button {
+    cursor: pointer;
+}
+.phone {
+    background: url(iphone.png);
+    background-size: 100%;
+    padding: 105px 26px;
+}
+.calculator {
+    background: #f8fffc;
+    height: 667px;
+    overflow: hidden;
+    position: relative;
+    width: 375px;
+}
+.title-box {
+    position: relative;
+}
+.title-box > svg {
+    display: block;
+    width: 100%;
+}
+.title {
+    font-family: 'Pacifico', cursive;
+    left: 50%;
+    margin-top: -10px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.form {
+    padding: 0 60px;
+}
+.form-list-title {
+    color: #a5a679;
+}
+.form-list-cont {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.form .form-list-title {
+    margin-top: 20px;
+}
+.form .form-list-cont {
+    margin-top: 10px;
+}
+.text-box {
+    display: inline-block;
+    min-width: 15px;
+    position: relative;
+}
+.text-box.dollar::before {
+    color: #048147;
+    content: '\0024';
+    font-size: 24px;
+    font-weight: bold;
+    left: -20px;
+    position: absolute;
+}
+.text-box.percent::after {
+    color: #048147;
+    content: '%';
+    font-size: 24px;
+    font-weight: bold;
+}
+.text-box .input {
+    color: #048147;
+    display: inline-block;
+    font-size: 24px;
+    font-weight: bold;
+    height: 35px;
+    min-width: 15px;
+    outline: none;
+    text-align: center;
+    width: 100%;
+}
+.text-box.dollar .input {
+    border-bottom: 2px solid #b6b6b6;
+}
+.form .form-list-cont.radio {
+    margin: 5px -5px -5px;
+}
+.radio-box {
+    box-sizing: border-box;
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+    padding: 5px;
+}
+.radio-box:last-child {
+    flex: 1 0 0px;
+    max-width: none;
+}
+.radio-box > input {
+    display: none;
+}
+.radio-box > label {
+    background: #fff;
+    border-radius: 25px;
+    box-shadow: 2px 2px 7px rgba(137, 161, 151, 0.5);
+    box-sizing: border-box;
+    color: #16a465;
+    cursor: pointer;
+    display: block;
+    font-weight: bold;
+    padding: 10px 15px;
+    text-align: center;
+    transition-duration: 0.3s;
+    white-space: nowrap;
+    width: 100%;
+}
+.radio-box > input:checked ~ label {
+    background: #16a465;
+    color: #fff;
+}
+.radio-box.show {
+    align-items: center;
+    display: flex;
+}
+.custom {
+    display: none;
+    flex-grow: 1;
+    text-align: center;
+}
+.custom .text-box {
+    display: inline-flex;
+}
+.custom .text-box.dollar::before {
+    position: static;
+}
+.custom .text-box .input {
+    width: auto;
+}
+.radio-box.show > label {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 45px;
+}
+.radio-box.show .custom {
+    display: block;
+}
+.btn-minus,
+.btn-plus {
+    color: #16a465;
+    font-size: 28px;
+    width: 42px;
+}
+.btn-enter {
+    background: #16a465;
+    border-radius: 20px;
+    box-shadow: 2px 2px 7px rgba(137, 161, 151, 0.5);
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    height: 45px;
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+}
+.toast {
+    background: #cef5e4;
+    border-radius: 10px 10px 0 0;
+    box-sizing: border-box;
+    left: 20px;
+    padding: 20px 20px 40px;
+    position: absolute;
+    top: 100%;
+    width: calc(100% - 40px);
+    transition-duration: 1s;
+}
+.toast.show {
+    transform: translateY(-100%);
+}
+.toast .form-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+}
+.toast .form-list > dt,
+.toast .form-list > dd {
+    text-align: center;
+}
+.toast .form-list dt.total {
+	grid-column-end: 3;
+    grid-column-start: 1;
+	grid-row-end: 2;
+	grid-row-start: 1;
+}
+.toast .form-list dd.total {
+    grid-column-end: 3;
+    grid-column-start: 1;
+	grid-row-end: 3;
+    grid-row-start: 2;
+    padding-bottom: 10px;
+}
+.toast .form-list dt.bill {
+	grid-column-end: 2;
+    grid-column-start: 1;
+	grid-row-end: 4;
+	grid-row-start: 3;
+}
+.toast .form-list dd.bill {
+    grid-column-end: 2;
+    grid-column-start: 1;
+	grid-row-end: 5;
+	grid-row-start: 4;
+}
+.toast .form-list dt.tip {
+	grid-column-end: 3;
+    grid-column-start: 2;
+	grid-row-end: 4;
+	grid-row-start: 3;
+}
+.toast .form-list dd.tip {
+    grid-column-end: 3;
+    grid-column-start: 2;
+	grid-row-end: 5;
+	grid-row-start: 4;
+}
+.result-total {
+    color: #048147;
+    font-size: 38px;
+    font-weight: bold;
+}
+.result-bill,
+.result-tip {
+    color: #048147;
+    font-size: 24px;
+    font-weight: bold;
+}
+.toast .form-list > dd > span::before {
+    content: '$';
+}
