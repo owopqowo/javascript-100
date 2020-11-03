@@ -1,0 +1,133 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #ead9db;
+}
+h1 {
+  margin: 0;
+}
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+button {
+  border: 0;
+  padding: 0;
+  background: none;
+  outline: none;
+  cursor: pointer;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+input {
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+.blind {
+  display: inline-block;
+  overflow: hidden;
+  border: 0;
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+}
+.lnr {
+  display: inline-block;
+  fill: currentColor;
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.05em;
+}
+.title {
+  margin-bottom: 30px;
+}
+.input-box {
+  display: flex;
+  max-width: 100%;
+  width: 500px;
+}
+.input-text {
+  flex: 1 0 0px;
+  height: 38px;
+  box-sizing: border-box;
+  padding: 0 10px;
+  border: 1px solid #706060;
+  border-radius: 8px 0 0 8px;
+  outline: none;
+}
+.btn-add {
+  width: 38px;
+  margin-left: -1px;
+  box-sizing: border-box;
+  border-radius: 0 8px 8px 0;
+  background: #706060;
+  font-size: 20px;
+  color: #fff;
+}
+.btn-add .lnr {
+  margin: 2px 0 0 1px;
+}
+.list {
+  overflow: auto;
+  max-width: 100%;
+  width: 500px;
+  height: 60%;
+  margin-top: 20px;
+}
+.list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 42px;
+  margin-top: 5px;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 8px ;
+  background: rgba(255,255,255,0.7);
+}
+.list-item:first-child {
+  margin-top: 0;
+}
+.item-name {
+  font-size: 18px;
+}
+.completed .item-name {
+  color: #ddd;
+  text-decoration: line-through;
+}
+.item-edit {
+  flex: 1 0 0px;
+  display: none;
+  border: 0;
+  background: none;
+  font-size: 18px;
+  outline: none;
+}
+.editing .item-name {
+  display: none;
+}
+.editing .item-edit {
+  display: block;
+}
+.btn-box button {
+  font-size: 20px;
+}
+.btn-complete {
+  color: #829589;
+}
+.btn-edit {
+  color: #aabac1;
+}
+.btn-del {
+  color: #eea78a;
+}
