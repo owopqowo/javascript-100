@@ -26,3 +26,5 @@ https://jsbeginners.com/javascript-projects-for-beginners/
 [link](https://github.com/owopqowo/javascript-100/tree/master/10_To_Do_List)
 ## 11_Shopping_Cart
 [link](https://github.com/owopqowo/javascript-100/tree/master/11_Shopping_Cart)
+## 12_Random_Joke
+[link](https://github.com/owopqowo/javascript-100/tree/master/12_Random_Joke)
